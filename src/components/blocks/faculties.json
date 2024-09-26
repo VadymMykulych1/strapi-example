@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_faculties",
+  "info": {
+    "displayName": "Faculties",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::faculty-category.faculty-category"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

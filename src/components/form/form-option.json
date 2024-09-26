@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_form_form_options",
+  "info": {
+    "displayName": "FormOption",
+    "icon": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "inputId": {
+      "type": "string",
+      "required": true
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "input",
+        "select",
+        "text-area"
+      ],
+      "default": "input",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "isRequired": {
+      "type": "boolean",
+      "default": false
+    },
+    "defaultValue": {
+      "type": "string"
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "form.select-option"
+    },
+    "inputType": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "number",
+        "email"
+      ]
+    }
+  }
+}
